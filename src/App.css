@@ -4,14 +4,14 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 500px;
 }
 
 .App-header {
-  background-color: darkblue;
-  height: 150px;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/736x/9e/38/7f/9e387ff69f7dbce247ecfdabd3707435.jpg");
+  height: 450px;
   padding: 20px;
-  color: orange;
+  color: gold;
 }
 
 .App-intro {
@@ -20,5 +20,5 @@
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
-  to { transform: rotate(28800deg); }
+  to { transform: rotate(2880deg); }
 }

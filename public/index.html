@@ -13,54 +13,280 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Triple BigMac</title>
+    <title>Music Chart App</title>
   </head>
-  <body>
+  <body class="whole">
     <div id="root"></div>
     <!DOCTYPE html>
 <html>
 <body>
+    <h2 class="title1 letter-hover">Top 10 Lists</h2>
+<div id = "center" align = 'center'>
+  <table id = 'music'>
+  <tr><th><a id = "1stlink" href = "#" target = "_blank">Click on a button to start</a></th></tr>
 
-<table>
-<tr>
-<th id = "demo" ></th>
-</tr>
-<tr>
-<th id = "demo2" ></th>
-</tr>
+  <tr><th><a id = "2ndlink" href = "#" target = "_blank"></a></th></tr>
+
+  <tr><th><a id = "3rdlink" href = "#" target = "_blank"></a></th></tr>
+
+  <tr><th><a id = "4thlink" href = "#" target = "_blank"></a></th></tr>
+
+  <tr><th><a id = "5thlink" href = "#" target = "_blank"></a></th></tr>
+
+  <tr><th><a id = "6thlink" href = "#" target = "_blank"></a></th></tr>
+
+  <tr><th><a id = "7thlink" href = "#" target = "_blank"></a></th></tr>
+
+ <tr><th><a id = "8thlink" href = "#" target = "_blank"></a></th></tr>
+
+  <tr><th><a id = "9thlink" href = "#" target = "_blank"></a></th></tr>
+
+  <tr><th><a id = "10thlink" href = "#" target = "_blank"></a></th></tr>
 </table>
+
+
 <script>
-var xhttp = new XMLHttpRequest();
+  function myFunction(xml) {
+    var xmlDoc = xml.responseXML;
+    document.getElementById("1stlink").innerHTML =
+    xmlDoc.getElementsByTagName("title")[1].childNodes[0].nodeValue;
+  document.getElementById("1stlink").href = "https://www.youtube.com/results?q="+xmlDoc.getElementsByTagName("title")[1].childNodes[0].nodeValue;
+ document.getElementById("2ndlink").innerHTML =
+    xmlDoc.getElementsByTagName("title")[2].childNodes[0].nodeValue;
+   document.getElementById("2ndlink").href = "https://www.youtube.com/results?q="+xmlDoc.getElementsByTagName("title")[2].childNodes[0].nodeValue;
+  document.getElementById("3rdlink").innerHTML =
+    xmlDoc.getElementsByTagName("title")[3].childNodes[0].nodeValue;
+   document.getElementById("3rdlink").href = "https://www.youtube.com/results?q="+xmlDoc.getElementsByTagName("title")[3].childNodes[0].nodeValue;
+  document.getElementById("4thlink").innerHTML =
+    xmlDoc.getElementsByTagName("title")[4].childNodes[0].nodeValue;
+  document.getElementById("4thlink").href = "https://www.youtube.com/results?q="+xmlDoc.getElementsByTagName("title")[4].childNodes[0].nodeValue;
+  document.getElementById("5thlink").innerHTML =
+    xmlDoc.getElementsByTagName("title")[5].childNodes[0].nodeValue;
+  document.getElementById("5thlink").href = "https://www.youtube.com/results?q="+xmlDoc.getElementsByTagName("title")[5].childNodes[0].nodeValue;
+  document.getElementById("6thlink").innerHTML =
+    xmlDoc.getElementsByTagName("title")[6].childNodes[0].nodeValue;
+  document.getElementById("6thlink").href = "https://www.youtube.com/results?q="+xmlDoc.getElementsByTagName("title")[6].childNodes[0].nodeValue;
+  document.getElementById("7thlink").innerHTML =
+    xmlDoc.getElementsByTagName("title")[7].childNodes[0].nodeValue;
+  document.getElementById("7thlink").href = "https://www.youtube.com/results?q="+xmlDoc.getElementsByTagName("title")[7].childNodes[0].nodeValue;
+  document.getElementById("8thlink").innerHTML =
+    xmlDoc.getElementsByTagName("title")[8].childNodes[0].nodeValue;
+  document.getElementById("8thlink").href = "https://www.youtube.com/results?q="+xmlDoc.getElementsByTagName("title")[8].childNodes[0].nodeValue;
+  document.getElementById("9thlink").innerHTML =
+    xmlDoc.getElementsByTagName("title")[9].childNodes[0].nodeValue;
+  document.getElementById("9thlink").href = "https://www.youtube.com/results?q="+xmlDoc.getElementsByTagName("title")[9].childNodes[0].nodeValue;
+  document.getElementById("10thlink").innerHTML =
+    xmlDoc.getElementsByTagName("title")[10].childNodes[0].nodeValue;
+  document.getElementById("10thlink").href = "https://www.youtube.com/results?q="+xmlDoc.getElementsByTagName("title")[10].childNodes[0].nodeValue;
+}
+function MYfunction2(){var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         myFunction(this);
     }
 };
-xhttp.open("GET", "https://itunes.apple.com/WebObjects/MZStore.woa/wpa/MRSS/featuredalbums/sf=143441/limit=10/rss.xml", true);
-xhttp.send();
+xhttp.open("GET", "https://itunes.apple.com/us/rss/topalbums/limit=10/xml", true);
+xhttp.send();}
+function MYfunction3(){var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myFunction(this);
+    }
+};
+xhttp.open("GET", "https://itunes.apple.com/us/rss/topalbums/limit=10/genre=6/xml", true);
+xhttp.send();}
 
-function myFunction(xml) {
-    var xmlDoc = xml.responseXML;
-    document.getElementById("demo").innerHTML =
-    xmlDoc.getElementsByTagName("title")[2].childNodes[0].nodeValue;
- document.getElementById("demo2").innerHTML =
-    xmlDoc.getElementsByTagName("title")[3].childNodes[0].nodeValue;
+function MYfunction3(){var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myFunction(this);
+    }
+};
+xhttp.open("GET", "https://itunes.apple.com/us/rss/topalbums/limit=10/genre=6/xml", true);
+xhttp.send();}
+
+ function MYfunction4(){var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myFunction(this);
+    }
+};
+xhttp.open("GET", "https://itunes.apple.com/us/rss/topalbums/limit=10/genre=20/xml", true);
+xhttp.send();}
+
+   function MYfunction5(){var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myFunction(this);
+    }
+};
+xhttp.open("GET", "https://itunes.apple.com/us/rss/topalbums/limit=10/genre=21/xml", true);
+xhttp.send();}
+
+ function MYfunction6(){var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myFunction(this);
+    }
+};
+xhttp.open("GET", "https://itunes.apple.com/us/rss/topalbums/limit=10/genre=14/xml", true);
+xhttp.send();}
+
+function MYfunction7(){var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myFunction(this);
+    }
+};
+xhttp.open("GET", "https://itunes.apple.com/us/rss/topalbums/limit=10/genre=11/xml", true);
+xhttp.send();}
+
+function MYfunction8(){var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myFunction(this);
+    }
+};
+xhttp.open("GET", "https://itunes.apple.com/us/rss/topsongs/limit=10/xml", true);
+xhttp.send();}
+
+function MYfunction9(){var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myFunction(this);
+    }
+};
+xhttp.open("GET", "https://itunes.apple.com/us/rss/topsongs/limit=10/genre=6/xml", true);
+xhttp.send();}
+
+ function MYfunction10(){var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myFunction(this);
+    }
+};
+xhttp.open("GET", "https://itunes.apple.com/us/rss/topsongs/limit=10/genre=20/xml", true);
+xhttp.send();}
+
+    function MYfunction11(){var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myFunction(this);
+    }
+};
+xhttp.open("GET", "https://itunes.apple.com/us/rss/topsongs/limit=10/genre=21/xml", true);
+xhttp.send();}
+
+function MYfunction12(){var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myFunction(this);
+    }
+};
+xhttp.open("GET", "https://itunes.apple.com/us/rss/topsongs/limit=10/genre=14/xml", true);
+xhttp.send();}
+
+function MYfunction13(){var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myFunction(this);
+    }
+};
+xhttp.open("GET", "https://itunes.apple.com/us/rss/topsongs/limit=10/genre=11/xml", true);
+xhttp.send();}
+    function myFunction888() {
+    document.getElementById("myDropdown").classList.toggle("show");
 }
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns2 = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns2.length; i++) {
+      var openDropdown = dropdowns2[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+  function myFunction889() {
+    document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn2')) {
+
+    var dropdowns2 = document.getElementsByClassName("dropdown-content2");
+    var i;
+    for (i = 0; i < dropdowns2.length; i++) {
+      var openDropdown = dropdowns2[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+
 </script>
 
+  <!-- <table>
+   <tr><th> -->
+ <div class="dropdown">
+  <button onclick="myFunction888()" class="dropbtn">Album</button>
+  <div id="myDropdown" class="dropdown-content">
+    <div> <button class = "button" type = 'button' onclick = "MYfunction2()">All</button></div>
+  <div><button class = "button" type = 'button' onclick = "MYfunction3()">Country</button></div>
+  <div><button class = "button" type = 'button' onclick = "MYfunction4()">Alternative</button></div>
+    <div><button class = "button" type = 'button' onclick = "MYfunction5()">Rock</button></div>
+    <div> <button class = "button" type = 'button' onclick = "MYfunction6()">Pop</button></div>
+    <div> <button class = "button" type = 'button' onclick = "MYfunction7()">Jazz</button></div>
+   </div>
+   </div>
+<!--    </tr></th>
+    <tr>
+      <th> -->
+  <div class="dropdown2">
+  <button onclick="myFunction889()" class="dropbtn2">Songs</button>
+  <div id="myDropdown2" class="dropdown-content2">
+    <div> <button class = "button" type = 'button' onclick = "MYfunction8()">All</button></div>
+ <div> <button class = "button" type = 'button' onclick = "MYfunction9()">Country</button></div>
+  <div><button class = "button" type = 'button' onclick = "MYfunction10()">Alternative</button></div>
+  <div><button class = "button" type = 'button' onclick = "MYfunction11()">Rock</button></div>
+    <div><button class = "button" type = 'button' onclick = "MYfunction12()">Pop</button></div>
+    <div> <button class = "button" type = 'button' onclick = "MYfunction13()">Jazz</button></div>
+    </div>
+  </div>
+<!--    </tr>
+</table> -->
+
+    <a  id ="link1" class = "bottomlink" href = "http://www.spin.com/news/" target = "_blank">Spin</a>
+    <a  id ="link2" class = "bottomlink" href = "https://www.apple.com/itunes/" target = "_blank">iTunes</a>
+    <a  id ="link3" class = "bottomlink" href = "https://www.amazon.com/MP3-Music-Download/b?ie=UTF8&node=163856011" target = "_blank">Amazon</a>
+    <a  id ="link4" class = "bottomlink" href = "https://play.google.com/store?hl=en" target = "_blank">Google Play</a>
+    <a  id ="link5" class = "bottomlink" href = "https://www.spotify.com/us/" target = "_blank">Spotify</a>
+
+  </div>
+
+
+
 </body>
+
+
+  <!-- <button class="button" type = 'button' onclick = "MYfunction2()">all</button>
+  <button class="button" type = 'button' onclick = "MYfunction3()">country</button> -->
+
+
+
 </html>
 
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start`.
-      To create a production bundle, use `npm run build`.
-    -->
     <script src="https://fb.me/react-0.14.3.js"></script>
     <script src="https://fb.me/react-dom-0.14.3.js"></script>
     <script src="App.js"></script>

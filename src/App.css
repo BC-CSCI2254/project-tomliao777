@@ -4,14 +4,32 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 500px;
+  height: 200px;
+  margin-top: 60px;
 }
 
+.App-logo:hover{
+  background: url("http://icons.iconarchive.com/icons/pixelresort/itunes-10/256/Round-Silver-Bullet-icon.png") no-repeat scroll 0 0 transparent;
+  height: 248px;
+  margin: 0;
+  overflow: hidden;
+  padding: 10px 10px;
+  width: 996px;
+  background-size: 0px 0px;
+}
+
+
 .App-header {
-  background-image: url("https://s-media-cache-ak0.pinimg.com/736x/9e/38/7f/9e387ff69f7dbce247ecfdabd3707435.jpg");
-  height: 450px;
+  background-image: url("https://www.freewebheaders.com/wordpress/wp-content/gallery/gold/awesome-golden-pattern-background-header.jpg");
+  height: 150px;
   padding: 20px;
-  color: gold;
+  color: #FDD017;
+  font-family: Helvetica;
+}
+
+.App-header:hover{
+  background-image: url("https://media.giphy.com/media/mERa9Yi3lrZLi/giphy.gif");
+  background-size:contain;
 }
 
 .App-intro {
@@ -22,3 +40,238 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(2880deg); }
 }
+
+.button{
+      border: 5px solid #FDD017;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      float:left;
+      font-size: 12px;
+      align-items: center;
+      border:1px solid #a20000;-webkit-box-shadow: #72B55E 5px 5px 5px;
+      -moz-box-shadow: #72B55E 5px 5px 5px ; box-shadow: #72B55E 5px 5px 5px;
+      -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:12px;font-family:tahoma, verdana, arial, sans-serif; padding: 18px 18px 18px 18px; text-decoration:none; display:inline-block;font-weight:bold; color: #FFFFFF;
+ background-color: #DA0000;
+ background-image: -webkit-gradient(linear, left top, left bottom, from(#DA0000), to(#8F3E21));
+ background-image: -webkit-linear-gradient(top, #DA0000, #8F3E21);
+ background-image: -moz-linear-gradient(top, #DA0000, #8F3E21);
+ background-image: -ms-linear-gradient(top, #DA0000, #8F3E21);
+ background-image: -o-linear-gradient(top, #DA0000, #8F3E21);
+ background-image: linear-gradient(to bottom, #DA0000, #8F3E21);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#DA0000, endColorstr=#8F3E21);
+}
+.button:hover{
+  border:1px solid #029D26;
+ background-color: #18BFCB;
+ /*background-image: -webkit-gradient(linear, left top, left bottom, from(#18BFCB), to(#029D26));
+ background-image: -webkit-linear-gradient(top, #18BFCB, #029D26);
+ background-image: -moz-linear-gradient(top, #18BFCB, #029D26);
+ background-image: -ms-linear-gradient(top, #18BFCB, #029D26);
+ background-image: -o-linear-gradient(top, #18BFCB, #029D26);
+ background-image: linear-gradient(to bottom, #18BFCB, #029D26);
+ filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#18BFCB, endColorstr=#029D26);
+ */
+ background-image:url("https://media.giphy.com/media/YZCgwYu91j9NC/giphy.gif");
+ background: url("https://media.giphy.com/media/YZCgwYu91j9NC/giphy.gif") no-repeat center center fixed;
+        -webkit-background-size: contain;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: contain;
+}
+
+.bottomlink{
+  background-color: black;
+  background-size: cover;
+  border-radius: 25px;
+  color: gold;
+  font-size: 20px;
+  margin-left: 10px;
+  display:inline;
+}
+.bottomlink:hover{
+background-image: url("https://media.giphy.com/media/d4aVHC1HKnButuXC/giphy.gif");
+}
+#link1{
+  position:absolute;
+  top: 650px;
+  left: 520px;
+}
+#link2{
+  position:absolute;
+  top: 650px;
+  left: 620px;
+}
+#link3{
+  position:absolute;
+  top: 650px;
+  left: 730px;
+}
+#link4{
+  position:absolute;
+  top: 650px;
+  left: 860px;
+}
+#link5{
+  position:absolute;
+  top: 650px;
+  left: 1020px;
+}
+
+.title1{
+  color: #FDD017;
+ text-align: center;
+ margin-top: 100px;
+ justify-content: space-around;
+  animation: B 4s linear infinite;
+  -moz-animation: B 4s linear infinite;
+  /* Firefox */
+  -webkit-animation: B 4s linear infinite;
+  /* Safari and Chrome */
+  -o-animation: B 4s linear infinite;
+  /* Opera */
+}
+.letter-hover:hover {
+ color: orange;
+ text-shadow: .5vw .5vw 0 black;
+}
+
+#music{
+  background-image:url("http://unsplash.com/photos/_5TGspSCIdw/download?force=true");
+  background-size: cover;
+  border-radius:25px;
+}
+#music:hover{
+  background-image:url("https://media.giphy.com/media/xUA7aQ21bruxszHmRW/giphy.gif");
+  background-size: cover;
+}
+a{
+  color:white;
+}
+a:hover{
+  color: red;
+  text-shadow: .5vw .5vw 0 black;
+}
+body{
+  background-image: url("http://unsplash.com/photos/e6VmcXF8llA/download?force=true");
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size:cover;*/
+  background-size: cover;
+}
+.whole:active{
+  background-image: url("https://media.giphy.com/media/Ny6tc0CUS0CmQ/giphy.gif");
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size:cover;*/
+  background-size: cover;
+}
+
+
+
+
+
+
+.dropbtn {
+    position:relative;
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border:1px solid #CA0000;-webkit-box-shadow: #E0D531 5px 5px 5px  ;-moz-box-shadow: #E0D531 5px 5px 5px ; box-shadow: #E0D531 5px 5px 5px  ; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:20px;font-family:arial, helvetica, sans-serif; padding: 11px 11px 11px 11px; text-decoration:none; display:inline-block;font-weight:bold; color: #FFFC9E;
+ background-color: #DA0000; background-image: -webkit-gradient(linear, left top, left bottom, from(#DA0000), to(#B35344));
+ background-image: -webkit-linear-gradient(top, #DA0000, #B35344);
+ background-image: -moz-linear-gradient(top, #DA0000, #B35344);
+ background-image: -ms-linear-gradient(top, #DA0000, #B35344);
+ background-image: -o-linear-gradient(top, #DA0000, #B35344);
+ background-image: linear-gradient(to bottom, #DA0000, #B35344);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#DA0000, endColorstr=#B35344);
+}
+
+
+/* Dropdown button on hover & focus */
+.dropbtn2:hover, .dropbtn2:focus {
+  border:1px solid #B1BC1C;
+  background-color: #CBCB16; background-image: -webkit-gradient(linear, left top, left bottom, from(#CBCB16), to(#9D9856));
+  background-image: -webkit-linear-gradient(top, #CBCB16, #9D9856);
+  background-image: -moz-linear-gradient(top, #CBCB16, #9D9856);
+  background-image: -ms-linear-gradient(top, #CBCB16, #9D9856);
+  background-image: -o-linear-gradient(top, #CBCB16, #9D9856);
+  background-image: linear-gradient(to bottom, #CBCB16, #9D9856);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#CBCB16, endColorstr=#9D9856);
+ }
+
+.dropbtn2 {
+  position:relative;
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border:1px solid #CA0000;-webkit-box-shadow: #E0D531 5px 5px 5px  ;-moz-box-shadow: #E0D531 5px 5px 5px ; box-shadow: #E0D531 5px 5px 5px  ; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:20px;font-family:arial, helvetica, sans-serif; padding: 11px 11px 11px 11px; text-decoration:none; display:inline-block;font-weight:bold; color: #FFFC9E;
+background-color: #DA0000; background-image: -webkit-gradient(linear, left top, left bottom, from(#DA0000), to(#B35344));
+background-image: -webkit-linear-gradient(top, #DA0000, #B35344);
+background-image: -moz-linear-gradient(top, #DA0000, #B35344);
+background-image: -ms-linear-gradient(top, #DA0000, #B35344);
+background-image: -o-linear-gradient(top, #DA0000, #B35344);
+background-image: linear-gradient(to bottom, #DA0000, #B35344);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#DA0000, endColorstr=#B35344);
+}
+
+.dropbtn:hover {
+ border:1px solid #B1BC1C;
+ background-color: #CBCB16; background-image: -webkit-gradient(linear, left top, left bottom, from(#CBCB16), to(#9D9856));
+ background-image: -webkit-linear-gradient(top, #CBCB16, #9D9856);
+ background-image: -moz-linear-gradient(top, #CBCB16, #9D9856);
+ background-image: -ms-linear-gradient(top, #CBCB16, #9D9856);
+ background-image: -o-linear-gradient(top, #CBCB16, #9D9856);
+ background-image: linear-gradient(to bottom, #CBCB16, #9D9856);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#CBCB16, endColorstr=#9D9856);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content2 a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block}

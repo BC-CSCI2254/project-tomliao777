@@ -7,8 +7,9 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
+        <div className="outer">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Here is your Big Mac</h2>
+        </div>
         </div>
         <p className="App-intro">
         </p>
@@ -16,5 +17,6 @@ class App extends Component {
     );
   }
 }
+
 
 export default App;
